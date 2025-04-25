@@ -1,4 +1,4 @@
-// 1-1 ¹®Á¦
+// 1-1 ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
@@ -10,12 +10,12 @@ int main() {
         sum += (i + 1);
     }
 
-    cout << "1ºÎÅÍ n±îÁöÀÇ ÇÕ : " << sum << endl;
+    cout << "1ë¶€í„° nê¹Œì§€ì˜ í•© : " << sum << endl;
 
     return 0;
 }
 
-// 1-2 ¹®Á¦
+// 1-2 ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
@@ -23,23 +23,23 @@ int main() {
     int n = 0;
     int sum = 0;
 
-    cout << "Á¤¼ö nÀ» ÀÔ·ÂÇÏ¼¼¿ä : ";
+    cout << "ì •ìˆ˜ nì„ ìž…ë ¥í•˜ì„¸ìš” : ";
     cin >> n;
 
     if (n <= 0) {
-        cout << "Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù." << endl;
+        cout << "ìž˜ëª»ëœ ìž…ë ¥ìž…ë‹ˆë‹¤." << endl;
     }
     else {
         for (int i = 1; i <= n; i++) {
             sum += i;
         }
-        cout << "1ºÎÅÍ n±îÁöÀÇ ÇÕ : " << sum << endl;
+        cout << "1ë¶€í„° nê¹Œì§€ì˜ í•© : " << sum << endl;
     }
 
     return 0;
 }
 
-// 1-3 ¹®Á¦
+// 1-3 ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
@@ -48,7 +48,7 @@ int main() {
     int sum = 0;
 
     while (x < 0) {
-        cout << "Á¤¼ö nÀ» ÀÔ·ÂÇÏ¼¼¿ä : ";
+        cout << "ì •ìˆ˜ nì„ ìž…ë ¥í•˜ì„¸ìš” : ";
         cin >> x;
     }
 
@@ -56,11 +56,11 @@ int main() {
         sum += i;
     }
 
-    cout << "1ºÎÅÍ n±îÁöÀÇ ÇÕ : " << sum << endl;
+    cout << "1ë¶€í„° nê¹Œì§€ì˜ í•© : " << sum << endl;
     return 0;
 }
 
-// 1-4 ¹®Á¦
+// 1-4 ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
@@ -68,7 +68,7 @@ int get_n() {
     int x = -1;
 
     while (x < 0) {
-        cout << "Á¤¼ö nÀ» ÀÔ·ÂÇÏ¼¼¿ä : ";
+        cout << "ì •ìˆ˜ nì„ ìž…ë ¥í•˜ì„¸ìš” : ";
         cin >> x;
     }
 
@@ -92,11 +92,11 @@ int main() {
     n = get_n();
     sum = cal_sum(n);
 
-    cout << "1ºÎÅÍ n±îÁöÀÇ ÇÕ : " << sum << endl;
+    cout << "1ë¶€í„° nê¹Œì§€ì˜ í•© : " << sum << endl;
     return 0;
 }
 
-// 1-5 ¹®Á¦
+// 1-5 ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
@@ -104,7 +104,7 @@ void get_n(int* x) {
     *x = -1;
 
     while (*x < 0) {
-        cout << "Á¤¼ö nÀ» ÀÔ·ÂÇÏ¼¼¿ä : ";
+        cout << "ì •ìˆ˜ nì„ ìž…ë ¥í•˜ì„¸ìš” : ";
         cin >> *x;
     }
 }
@@ -124,7 +124,7 @@ int main() {
     get_n(&n);
     cal_sum(n, &sum);
 
-    cout << "1ºÎÅÍ n±îÁöÀÇ ÇÕ : " << sum << endl;
+    cout << "1ë¶€í„° nê¹Œì§€ì˜ í•© : " << sum << endl;
     return 0;
 }
 
