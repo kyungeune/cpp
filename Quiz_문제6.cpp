@@ -1,4 +1,4 @@
-// 6-1 ¹®Á¦
+// 6-1 Â¹Â®ÃÂ¦
 #include <iostream>
 using namespace std;
 
@@ -17,7 +17,7 @@ int main() {
     Print(arr, size);
 }
 
-// 6-2 ¹®Á¦
+// 6-2 Â¹Â®ÃÂ¦
 #include <iostream>
 using namespace std;
 
@@ -44,7 +44,7 @@ int main() {
     Print(arr, size);
 }
 
-// 6-3 ¹®Á¦
+// 6-3 Â¹Â®ÃÂ¦
 #include <iostream>
 using namespace std;
 
