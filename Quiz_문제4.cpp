@@ -1,4 +1,4 @@
-// 4-1 ¹®Á¦
+// 4-1 ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
@@ -8,9 +8,9 @@ int main() {
     int b = 4;
     double rslt = 0;
 
-    cout << "¾î¶² ¿¬»êÀ» ¿øÇÏ´ÂÁö ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+    cout << "ì–´ë–¤ ì—°ì‚°ì„ ì›í•˜ëŠ”ì§€ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ";
     cin >> which;
-    cout << "ÀÔ·ÂµÈ µÎ ¼ö : " << a << ", " << b << endl;
+    cout << "ìž…ë ¥ëœ ë‘ ìˆ˜ : " << a << ", " << b << endl;
 
     if (which == 1) {
         rslt = a + b;
@@ -25,26 +25,26 @@ int main() {
         rslt = (double)a / b;
     }
     else {
-        cout << "Àß¸øµÈ ¿¬»ê ¹øÈ£ÀÔ´Ï´Ù." << endl;
+        cout << "ìž˜ëª»ëœ ì—°ì‚° ë²ˆí˜¸ìž…ë‹ˆë‹¤." << endl;
     }
 
     if (which >= 1 && which <= 4)
-        cout << "¿¬»ê ¹øÈ£ " << which << "ÀÇ °á°ú : " << rslt << endl;
+        cout << "ì—°ì‚° ë²ˆí˜¸ " << which << "ì˜ ê²°ê³¼ : " << rslt << endl;
 
     return 0;
 }
 
-// 4-2 ¹®Á¦
+// 4-2 ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
 void get_which(int* which) {
     do {
-        cout << "¾î¶² ¿¬»êÀ» ¿øÇÏ´ÂÁö ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+        cout << "ì–´ë–¤ ì—°ì‚°ì„ ì›í•˜ëŠ”ì§€ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ";
         cin >> *which;
 
         if (*which < 1 || *which > 4) {
-            cout << "¿¬»ê ¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù." << endl;
+            cout << "ì—°ì‚° ë²ˆí˜¸ë¥¼ ìž˜ëª» ìž…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤." << endl;
         }
 
     } while (*which < 1 || *which > 4);
@@ -70,24 +70,24 @@ int main() {
     double rslt = 0;
 
     get_which(&which);
-    cout << "ÀÔ·ÂµÈ µÎ ¼ö : " << a << ", " << b << endl;
+    cout << "ìž…ë ¥ëœ ë‘ ìˆ˜ : " << a << ", " << b << endl;
 
     rslt = cal_which(a, b, which);
-    cout << "¿¬»ê ¹øÈ£ " << which << "ÀÇ °á°ú : " << rslt << endl;
+    cout << "ì—°ì‚° ë²ˆí˜¸ " << which << "ì˜ ê²°ê³¼ : " << rslt << endl;
 
     return 0;
 }
-// 4-3 ¹®Á¦
+// 4-3 ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
 void get_which(int* which) {
     do {
-        cout << "¾î¶² ¿¬»êÀ» ¿øÇÏ´ÂÁö ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+        cout << "ì–´ë–¤ ì—°ì‚°ì„ ì›í•˜ëŠ”ì§€ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ";
         cin >> *which;
 
         if (*which < 1 || *which > 4)
-            cout << "¿¬»ê ¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù." << endl;
+            cout << "ì—°ì‚° ë²ˆí˜¸ë¥¼ ìž˜ëª» ìž…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤." << endl;
 
     } while (*which < 1 || *which > 4);
 }
@@ -120,40 +120,40 @@ int main() {
     double rslt = 0;
 
     get_which(&which);
-    cout << "ÀÔ·ÂµÈ µÎ ¼ö : " << a << ", " << b << endl;
+    cout << "ìž…ë ¥ëœ ë‘ ìˆ˜ : " << a << ", " << b << endl;
 
     rslt = cal_which(a, b, which);
-    cout << "¿¬»ê ¹øÈ£ " << which << "ÀÇ °á°ú : " << rslt << endl;
+    cout << "ì—°ì‚° ë²ˆí˜¸ " << which << "ì˜ ê²°ê³¼ : " << rslt << endl;
 
     return 0;
 }
 
 
-// 4-4 ¹®Á¦
+// 4-4 ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
 void get_which(int* which) {
     do {
-        cout << "¾î¶² ¿¬»êÀ» ¿øÇÏ´ÂÁö ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+        cout << "ì–´ë–¤ ì—°ì‚°ì„ ì›í•˜ëŠ”ì§€ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ";
         cin >> *which;
 
         if (*which < 1 || *which > 4)
-            cout << "¿¬»ê ¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù." << endl;
+            cout << "ì—°ì‚° ë²ˆí˜¸ë¥¼ ìž˜ëª» ìž…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤." << endl;
 
     } while (*which < 1 || *which > 4);
 }
 
 void get_ab(int* a, int* b) {
     do {
-        cout << "¾ç¼ö a, b¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+        cout << "ì–‘ìˆ˜ a, bë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ";
         cin >> *a >> *b;
 
         if (*a <= 0) {
-            cout << "a°¡ À½¼öÀÔ´Ï´Ù." << endl;
+            cout << "aê°€ ìŒìˆ˜ìž…ë‹ˆë‹¤." << endl;
         }
         if (*b <= 0) {
-            cout << "b°¡ À½¼öÀÔ´Ï´Ù." << endl;
+            cout << "bê°€ ìŒìˆ˜ìž…ë‹ˆë‹¤." << endl;
         }
 
     } while (*a <= 0 || *b <= 0);
@@ -189,10 +189,10 @@ int main() {
     get_which(&which);
     get_ab(&a, &b);
 
-    cout << "ÀÔ·ÂµÈ µÎ ¼ö : " << a << ", " << b << endl;
+    cout << "ìž…ë ¥ëœ ë‘ ìˆ˜ : " << a << ", " << b << endl;
 
     rslt = cal_which(a, b, which);
-    cout << "¿¬»ê ¹øÈ£ " << which << "ÀÇ °á°ú : " << rslt << endl;
+    cout << "ì—°ì‚° ë²ˆí˜¸ " << which << "ì˜ ê²°ê³¼ : " << rslt << endl;
 
     return 0;
 }
